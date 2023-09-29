@@ -207,6 +207,7 @@ class content extends \core_courseformat\output\local\content {
                 }
             }
             $format->set_sections_preference('contentcollapsed', array_values($current_preference['contentcollapsed']));
+            $format->set_sections_preference('indexcollapsed', array_values($current_preference['contentcollapsed']));
             $SESSION->$coursesession = true;
         }
     }    
@@ -226,6 +227,7 @@ class content extends \core_courseformat\output\local\content {
             }
         }
         $format->set_sections_preference('contentcollapsed', array_values($current_preference['contentcollapsed']));
+        $format->set_sections_preference('indexcollapsed', array_values($current_preference['contentcollapsed']));
     } 
 
 }
